@@ -1,6 +1,6 @@
 <?php
 	// SimpleCommentSystem 1.0
-	// Copyright 2009. shiz
+	// Copyright 2011. shiz
 	// This program is distributed under terms of the Lesser GPL.
 	function comment($pageName) {
 		echo '<div id="comment"><p><span style="font-size: 18px;">Comments:</span></p>';

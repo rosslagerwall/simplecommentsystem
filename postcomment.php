@@ -1,6 +1,6 @@
 <?php
 	// SimpleCommentSystem 1.0
-	// Copyright 2009. shiz
+	// Copyright 2011. shiz
 	// This program is distributed under terms of the Lesser GPL.
 	if ($_POST['page'] != '' && $_POST['name'] != '' && $_POST['comment'] != '' && file_exists($_POST['page'].".php")) {
 		$name = str_replace("~", "", $_POST['name']);
