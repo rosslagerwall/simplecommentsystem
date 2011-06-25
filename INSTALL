@@ -1,0 +1,15 @@
+Installation Instructions
+=========================
+
+This release contains two files:
+	comment.php
+	postcomment.php
+
+To use, place the following lines of text where you want to use it.
+
+	<?php
+		include("comment.php");
+		comment("index");
+	?>
+
+where index is the name of the page that will contain the comments.

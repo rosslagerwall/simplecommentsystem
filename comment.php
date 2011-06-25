@@ -1,7 +1,7 @@
 <?php
 	// SimpleCommentSystem 1.0
 	// Copyright 2011. Ross Lagerwall
-	// This program is distributed under terms of the Lesser GPL.
+	// This program is distributed under terms of the Lesser GPL Version 3.
 	function comment($pageName) {
 		echo '<div id="comment"><p><span style="font-size: 18px;">Comments:</span></p>';
 		if (file_exists($pageName."c.txt")) {
