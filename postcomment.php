@@ -23,6 +23,7 @@
 		$comment = strip_tags($comment);
 
 		$comment = nl2br($comment, TRUE);
+		$comment = str_replace(array("\r\n", "\r", "\n"), "", $comment);
 		$name = substr($name, 0, 100);
 		$comment = substr($comment, 0, 5000);
 		
