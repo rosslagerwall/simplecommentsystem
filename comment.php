@@ -21,7 +21,7 @@
 			$fileC = file($pageName."c.txt");
 			foreach ($fileC as $line) {
 				$arr = explode("~", $line);
-				echo "<b>".$arr[0]."</b> at ".$arr[1].":";
+				echo "<b>".$arr[0]."</b> at ".date("D M j Y", $arr[1]).":";
 				echo "<blockquote style='margin-top: 0px;'>".$arr[2];
 				echo "</blockquote>";
 			}
