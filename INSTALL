@@ -8,8 +8,12 @@ This release contains two files:
 To use, place the following lines of text where you want to use it.
 
 	<?php
+		date_default_timezone_set('UTC');
+
 		include("comment.php");
 		comment("index");
 	?>
 
-where index is the name of the page that will contain the comments.
+where index is the name of the page that will contain the comments.  The call to
+date_default_timezone_set() is needed to avoid a warning when calling the date()
+function.  A timezone other than UTC may be used.
