@@ -30,6 +30,8 @@
 		$tfile = $_POST['page']."c.txt";
 		if (file_exists($tfile)) {
 			$str = file_get_contents($tfile)."\n";
+		} else {
+			$str = '';
 		}
 		$str .= $name."~".time()."~".$comment;
 		file_put_contents($tfile, $str);
