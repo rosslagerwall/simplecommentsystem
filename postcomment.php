@@ -22,9 +22,7 @@
 		$name = strip_tags($name);
 		$comment = strip_tags($comment);
 
-		$comment = str_replace("\r\n", "<br />", $comment);
-		$comment = str_replace("\n", "<br />", $comment);
-		$comment = str_replace("\r", "<br />", $comment);
+		$comment = nl2br($comment, TRUE);
 		$name = substr($name, 0, 100);
 		$comment = substr($comment, 0, 5000);
 		
@@ -32,7 +30,7 @@
 		if (file_exists($tfile)) {
 			$str = file_get_contents($tfile)."\n";
 		}
-		$str .= $name."~".date("D M j Y")."~".$comment;
+		$str .= $name."~".time()."~".$comment;
 		file_put_contents($tfile, $str);
 	}
 	header("Location: ". $_POST['page'].".php");
